@@ -34,8 +34,18 @@ public class homeactivity extends AppCompatActivity {
         TextView tv= (TextView) findViewById(R.id.message);
         tv.setText(PersonName+ " entered " + RoomName);
 
-        Button button = (Button) findViewById(R.id.changeRoom);
+        Button button = (Button) findViewById(R.id.resetButton);
         button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent= new Intent(homeactivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button1 = (Button) findViewById(R.id.changeRoom);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

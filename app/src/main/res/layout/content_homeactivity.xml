@@ -36,12 +36,28 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/message"
+        android:id="@+id/resetButton"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/textPrimary"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="italic"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:textColor="@color/textPrimary"
         android:text="Change Room"
-        android:layout_below="@+id/message"
+        android:layout_below="@+id/resetButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:textAllCaps="false"
         android:textSize="20dp"
         android:id="@+id/changeRoom"
@@ -58,5 +74,7 @@
         android:textColor="@color/textPrimary"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"/>
+
+
 
 </RelativeLayout>

@@ -32,7 +32,7 @@ public class RoomActivity extends AppCompatActivity {
                 PersonSelection ha = new PersonSelection();
                 ha.changeName(s);
                 Toast.makeText(RoomActivity.this,"Room name Changed to "+s, Toast.LENGTH_LONG).show();
-                Intent intent= new Intent(RoomActivity.this, PersonSelection.class);
+                Intent intent= new Intent(RoomActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
